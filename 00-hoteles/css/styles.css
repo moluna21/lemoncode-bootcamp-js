@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-fluid {
+  min-width: 320px;
+  margin: 24px 16px 40px;
+}
+@media (min-width: 768px) {
+  .container-fluid {
+    padding: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .container-fluid {
+    padding: 32px;
+  }
+}
+
+.hotel-list__header h2 {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .hotel-list__header h2 {
+    font-size: 32px;
+  }
+}
+.hotel-list__content {
+  width: 100%;
+  max-width: 1680px;
+  margin: 24px auto auto;
+}
+@media (min-width: 1024px) {
+  .hotel-list__content {
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+  }
+}
+.hotel-list__content .hotel-list__item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .hotel-list__content .hotel-list__item {
+    width: 33.33%;
+    max-width: 360px;
+  }
+}
+.hotel-list__content .hotel-list__item + .hotel-list__item {
+  margin-top: 24px;
+}
+@media (min-width: 1024px) {
+  .hotel-list__content .hotel-list__item + .hotel-list__item {
+    margin-top: 0;
+  }
+}
+.hotel-list__content .hotel-list__item .hotel-list__card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #9c9c9c;
+  border-radius: 2px;
+}
+@media (min-width: 480px) {
+  .hotel-list__content .hotel-list__item .hotel-list__card {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .hotel-list__content .hotel-list__item .hotel-list__card {
+    flex-direction: column;
+  }
+}
+.hotel-list__content .hotel-list__item .hotel-list__column {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 480px) {
+  .hotel-list__content .hotel-list__item .hotel-list__column {
+    flex: 1;
+  }
+}
+@media (min-width: 480px) {
+  .hotel-list__content .hotel-list__item .hotel-list__column:first-of-type {
+    margin-right: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .hotel-list__content .hotel-list__item .hotel-list__column:first-of-type {
+    max-height: 200px;
+    min-height: 200px;
+    margin-right: 0;
+  }
+}
+.hotel-list__content .hotel-list__item img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 480px) {
+  .hotel-list__content .hotel-list__item img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.hotel-list__content .hotel-list__item__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 480px) {
+  .hotel-list__content .hotel-list__item__heading {
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .hotel-list__content .hotel-list__item__heading {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .hotel-list__content .hotel-list__item__heading {
+    flex-direction: column;
+  }
+}
+.hotel-list__content .hotel-list__item__heading .hotel-list__title {
+  margin-top: 8px;
+  margin-right: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .hotel-list__content .hotel-list__item__heading .hotel-list__title {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .hotel-list__content .hotel-list__item__heading .hotel-list__title {
+    margin-right: 0;
+  }
+}
+.hotel-list__content .hotel-list__item__heading .hotel-list__stars {
+  display: flex;
+  margin-top: 8px;
+  color: #ffa000;
+}
+.hotel-list__content .hotel-list__item__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 16px;
+}
+@media (min-width: 480px) {
+  .hotel-list__content .hotel-list__item__content {
+    align-items: flex-end;
+  }
+}
+.hotel-list__content .hotel-list__item__content .hotel-list__description {
+  width: 100%;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .hotel-list__content .hotel-list__item__content .hotel-list__description {
+    font-size: 17px;
+  }
+}
+.hotel-list__content .hotel-list__item__content .hotel-list__phone {
+  display: flex;
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .hotel-list__content .hotel-list__item__content .hotel-list__phone {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
