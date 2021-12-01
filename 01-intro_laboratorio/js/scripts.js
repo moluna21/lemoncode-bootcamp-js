@@ -1,5 +1,6 @@
 document.getElementById("name").value = "Daenerys";
 document.getElementById("lastName").value = "Targaryen";
+document.getElementById("avatar").src = "img/img-01.svg";
 
 function send() {
   return [
