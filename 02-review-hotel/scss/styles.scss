@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home {
+  position: relative;
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 80px 24px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(#000000, 0.4);
+    z-index: 1;
+  }
+
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+  }
+
+  &__container {
+    position: relative;
+    z-index: 3;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 80px 16px 32px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 0 0 8px #2F2F2F;
+
+    &__header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px 0;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+  
+      img {
+        width: 200px;
+      }
+    }
+  
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px 0;
+      width: 100%;
+      margin: 80px auto 0;
+      
+      h1 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        font-size: 24px;
+        color: #3c3c3c;
+        text-align: center;
+        text-transform: uppercase;
+      }
+  
+      .card__section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px 0;
+        width: 100%;
+      }
+  
+      .button {
+        width: 100%;
+        max-width: 300px;
+        padding: 16px 24px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #FFFFFF;
+        background: #05affe;
+        border-radius: 4px;
+        outline: 2px solid transparent;
+        outline-offset: -2px;
+        transition: .2s background ease-in-out, .2s outline ease-in-out;
+  
+        &:hover {
+          background: #008fd1;
+          outline-color: #0085c1;
+        }
+      }
+    }
+  }
+}
+
+.hotel-review {
+  &__container {
+    min-width: 320px;
+    margin: 24px 16px 40px;
+  }
+
+  &__header {
+    h1 {
+      text-align: center;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 320px;
+    margin: 24px auto auto;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 0 8px 2px #efefef;
+
+      &__content{
+        padding: 24px 16px 32px;
+      }
+
+      &__title {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+
+      &__subtitle {
+        margin-top: 24px;
+        padding-top: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        border-top: 1px solid #EFEFEF;
+      }
+
+      &__ranking {
+        margin-top: 8px;
+
+        span {
+          color: #e7a037;
+        }
+      }
+
+      .form-group {
+        margin-top: 16px;
+      }
+    }
+  }
+}
