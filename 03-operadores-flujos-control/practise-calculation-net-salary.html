@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+  <title>Net Salary</title>
+</head>
+<body>
+  <div class="calculation">
+    <h1>Calcular sueldo neto en nómina</h1>
+    <ul class="calculation__detail">
+      <li>Sueldo bruto: <span id="gross-salary"></span></li>
+      <li>Nº hijos: <span id="children"></span></li>
+      <li>Nº de pagas: <span id="wages"></span></li>
+    </ul>
+    <ul class="calculation__result">
+      <li>Impuesto total: <span id="total-income-tax"></span>€</li>
+      <li>Sueldo NETO anual: <span id="annual-net-salary"></span>€</li>
+      <li>Sueldo NETO mensual: <span id="monthly-net-salary"></span></li>
+    </ul>
+    <p class="calculation__footnote"><i>* Resultados también por <strong>CONSOLA</strong></i></p>
+  </div>
+  <script src="/js/salary.js"></script>
+</body>
+</html>
