@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Booking - Without result button</title>
+</head>
+<body>
+  <header id="title">
+    <h1>Hotel Booking</h1>
+  </header>
+
+  <main class="form">
+    <div class="form__content">
+      <div class="form__group">
+        <label for="selector-room">Tipo de habitación</label>
+        <select name="select" id="selector-room">
+          <option value="Default" selected>Seleccione una opción</option>
+          <option value="Standard">Standard</option>
+          <option value="Junior Suite">Junior Suite</option>
+          <option value="Suite">Suite</option>
+        </select>
+      </div>
+
+      <div class="form__group">
+        <input type="checkbox" id="selector-spa">
+        <label for="selector-spa">SPA</label>
+      </div>
+  
+      <div class="form__group">
+        <label for="selector-bed">Cama</label>
+        <select name="select" id="selector-bed">
+          <option value="Default" selected>Seleccione una opción</option>
+          <option value="Individual">Individual</option>
+          <option value="Doble">Doble</option>
+          <option value="Triple">Triple</option>
+        </select>
+      </div>
+  
+      <div class="form__group">
+        <label for="night-number">Nº noches</label>
+        <input type="number" id="night-number">
+      </div>
+  
+      <div class="form__group">
+        <label for="night-parking-number">Nº noches parking</label>
+        <input type="number" id="night-parking-number">
+      </div>
+    </div>
+
+    <div class="form__footer">
+      <div class="form__content">
+        <h3>Result: </h3>
+        <p id="print-result"><p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<style lang="scss">
+  body {
+    margin: 1rem;
+  
+  }
+  
+  #title {
+    text-align: center;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem 0;
+  }
+
+  .form__group {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .form__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 1.5rem;
+  }
+
+  .form__footer .form__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+
+  #print-result {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 100px;
+    height: 40px;
+    padding: 0.5rem;
+    background-color: #e8e8e8;
+  }
+</style>
