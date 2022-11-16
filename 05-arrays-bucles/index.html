@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modulo 5 - Arrays y Bucles</title>
+</head>
+<body>
+  <h1>Carrito de la compra</h1>
+  <p>* Resultados también en consola</p>
+
+  <div class="container">
+    <h2>Obligatorio</h2>
+
+    <div class="section">
+      <h3>1. Listar todos los productos.</h3>
+      <ul class="cart-list" id="main-cart"></ul>
+    </div>
+  
+    <div class="section">
+      <h3>2. Eliminar el producto con id 54657 del carrito de la compra.</h3>
+      <ul class="cart-list" id="cart-removed-product"></ul>
+    </div>
+  
+    <div class="section">
+      <h3>3. Calcular el total del carrito de la compra.</h3>
+      <ul class="cart-list" id="total-cart-list"></ul>
+      <p id="total-cart-price"></p>
+    </div>
+  
+    <div class="section">
+      <h3>4. Filtrar por los productos que sean prime.</h3>
+      <ul class="cart-list" id="prime-list"></ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Opcional</h2>
+
+    <div class="section">
+      <h3>1. Si todos los productos son prime mostrar un mensaje "Gastos de envío cero.", si no "Con gastos de envío.".</h3>
+      <h3>- Mostrar el carrito en un listado.</h3>
+      <ul class="cart-list" id="prime-shipping-cart"></ul>
+      <p id="shipping-info"></p>
+    </div>
+
+    <div class="section">
+      <h3>2. Aplicar un descuento del 5% si la compra es mayor de 50€.</h3>
+      <ul class="cart-list" id="final-cart"></ul>
+      <p id="total-price"></p>
+      <p id="total-discount"></p>
+      <p id="price-discount"></p>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+
+  <style>
+    body {
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    .section:not(:last-of-type) {
+      margin-bottom: 40px;
+    }
+
+    .section:last-of-type {
+      margin-bottom: 80px;
+    }
+
+    .cart-list li {
+      margin-bottom: 16px;
+    }
+    .cart-list p {
+      margin: 0px;
+    }
+  </style>
