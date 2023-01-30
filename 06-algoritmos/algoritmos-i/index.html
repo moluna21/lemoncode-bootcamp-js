@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modulo 6 - Algoritmos I</title>
+</head>
+
+<body>
+  <header>
+    <h1>Carrito de la Compra</h1>
+  </header>
+
+  <main>
+    <div class="cart">
+      <!-- Product list from JS -->
+      <ol id="list" class="cart__list">
+      </ol>
+
+      <button id="button-calculate" class="cart__button">Calcular</button>
+  
+      <div class="result">
+        <div class="result__item">
+          Subtotal: <span id="subtotal"></span>
+        </div>
+        <div class="result__item">
+          Impuestos: <span id="taxes"></span>
+        </div>
+        <div class="result__item">
+          Total: <span id="total-price"></span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    main {
+      margin: auto;
+      width: 70%;
+    }
+
+    .cart {
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+      margin: auto;
+      padding: 2rem;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+    }
+
+    .cart__list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .cart__product {
+      display: flex;
+    }
+
+    .cart__product {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      width: 100%;
+    }
+
+    .cart__input {
+      width: 60px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .cart__button {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0.75rem 1.25rem;
+      color: #FFFFFF;
+      text-align: center;
+      background-color: #4caf50;
+      border: none;
+      border-radius: 0.25rem;
+      cursor: inherit;
+    }
+
+    .cart__button--secondary {
+      color: #3d3d3d;
+      background-color: #d5d5d5;
+    }
+
+    .cart__button:hover:not([disabled]) {
+      background-color: #45a049;
+    }
+
+    .cart__button--secondary:hover:not([disabled]) {
+      background-color: #aaaaaa;
+    }
+
+    .cart__button:disabled {
+      background-color: #ddd;
+    }
+
+    .result {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+  </style>
