@@ -6,6 +6,10 @@
  *  - Unidades. Inicialmente 0 para todos los productos.
 **/
 
+/**
+ * Extra Personal: Añadir botón reset para resetear los valores a 0
+ */
+
 const REGULAR_TYPE = 21;
 const LOWER_TYPE = 4;
 const EXEMPT_TYPE = 0;
@@ -64,6 +68,7 @@ const products = [
 
 const cartList = document.getElementById("list");
 const buttonCalculate = document.getElementById('button-calculate');
+const buttonReset = document.getElementById('button-reset');
 const subtotal = document.getElementById('subtotal');
 const taxesTotal = document.getElementById('taxes');
 const priceTotal = document.getElementById('total-price');
@@ -103,6 +108,27 @@ const showProducts = productList => {
     });
 
     cartProduct.appendChild(input);
+
+    buttonReset.addEventListener('click', () => {
+      const resetInputValues = () => {
+        if (product.units !== 0) {
+          product.units = 0;
+          
+          input.value = product.units;
+          console.log(product.description, input.value);
+          console.log(product.description, product.units);
+
+          subtotal.innerHTML = '';
+          taxesTotal.innerHTML = '';
+          priceTotal.innerHTML = '';
+          productPriceSubtotal = 0;
+          productTaxesTotal = 0;
+          productTaxesTotal = 0;
+        }
+      }
+
+      resetInputValues(productList);
+    });
   }
 }
 
