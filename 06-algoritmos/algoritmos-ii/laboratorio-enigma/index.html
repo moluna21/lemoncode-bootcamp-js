@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modulo 6 - Algoritmos II - Laboratorio Enigma</title>
+</head>
+<body>
+  <main class="wrapper">
+    <h1>Enigma</h1>
+  
+    <textarea name="" placeholder="Introduce un mensaje" id="textarea-encrypt" cols="30" rows="10"></textarea>
+    
+    <div class="button__group">
+      <button id="button-encrypt" class="button">Encrypt</button>
+      <button id="button-descrypt" class="button">Descrypt</button>
+      <button id="button-clear" class="button button--secondary" type="reset">Clear</button>
+    </div>
+    
+    <textarea name="" placeholder="Introduce un mensaje" id="textarea-descrypt" cols="30" rows="10"></textarea>
+    <p><i>* Resultados en consola</i></p>
+  </main>
+  
+  <script src="script-optional.js"></script>
+</body>
+</html>
+
+<style lang="scss">
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    min-height: 100vh;
+    font-size: 16px;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 3rem;
+    background: #F3F4F7;
+  }
+
+  .button {
+    padding: 0.75rem 1.5rem;
+    color: #FFF;
+    background: #3E4756;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    outline: 0;
+  }
+
+  .button--secondary {
+    color: #3E4756;
+    background: transparent;
+    border-color: #3E4756;
+  }
+
+  .button__group {
+    display: flex;
+    gap: 1rem
+  }
+
+  textarea {
+    padding: 0.5rem;
+  }
+</style>
