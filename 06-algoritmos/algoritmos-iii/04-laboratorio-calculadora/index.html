@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modulo 6 - Algoritmos III - Laboratorio - Calculadora</title>
+</head>
+<body>
+  <main>
+    <h1>Calculadora</h1>
+    <div>
+      <input type="number" name="" id="amount-purchase">
+      <input type="number" name="" id="money-delivered">
+      <button id="button-calc">Calcular</button>
+       <!-- NOTE: extra personal -->
+      <button id="button-clean">Limpiar</button>
+    </div>
+
+    <div>
+      <!-- NOTE: extra personal -->
+      <div class="section-info">
+        <p>Importe compra: <span id="total-amount-purchase"></span></p>
+        <p>Efectivo entregado: <span id="total-money-delivered"></span></p>
+      </div>
+      
+      <div>
+        <h2>Resumen devolución:</h2>
+        <p>Devolución: <span id="refund-result"></span></p>
+        <div>
+          <p>Desglose:</p>
+          <ul id="details"></ul>
+        </div>
+        <!-- NOTE: extra personal -->
+        <p>Devolución pendiente: <span id="pending-refund"></span></p>
+      </div>
+      
+    </div>
+    <p><i>* Resultados en consola</i></p>
+  </main>
+
+  <!-- <script src="script.js"></script> -->
+  <script src="script-challengue.js"></script>
+</body>
+</html>
+
+<style lang="css">
+  .section-info{
+    margin-bottom: 24px;
+    border-bottom: 1px solid #dadada;
+  }
+</style>
