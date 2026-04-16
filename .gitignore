@@ -1,4 +1,10 @@
 .DS_store
+.env
 .vscode
+npm-debug.log
+yarn-error.log
 README.md
+coverage/
+dist/
 node_modules/
+.parcel-cache/
